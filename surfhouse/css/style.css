@@ -1,0 +1,82 @@
+body {
+    overflow-x: hidden;
+    font-size: 12px;
+}
+a {
+    text-decoration: none;
+}
+li{
+    list-style-type: none
+}
+header {
+    position: absolute;
+    top: 0;
+    
+    z-index: 100;
+    border: 1px solid red;
+}
+.wrapper {
+    
+    width: 1265px;
+    padding: 0 55px;
+    margin: 0 auto;
+    
+}
+.logo {
+    margin: 20px 70px 40px;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.nav {
+    display: flex;
+    margin: 50px 30px 0;
+    
+}.nav li{
+    margin-left: 15px;
+    font-size: 14px;
+}
+.nav__link {
+    color: #f8f8f8;
+}
+#banner {
+    height: 697px;
+    background-color: #abeafa;
+    position: relative;
+}
+
+.side-bar {
+    padding-top: 175px;
+    border: 1px solid red;
+    width: 270px;
+}
+.cart {
+        
+}
+.cart__login {
+    background-color: #f8f8f8;
+}
+.cart__login span {
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fb4d01;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
