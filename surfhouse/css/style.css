@@ -30,6 +30,8 @@ h3 {
     font-family: "Raleway", sans-serif;
     font-size: 1.5rem;
     font-weight: 800;
+    text-transform: capitalize;
+    margin: 0;
 }
     a {
     text-decoration: none;
@@ -881,15 +883,28 @@ nav {
 /*--------SOCIAL BIG LINKS--------------*/
 .social-big {
     height: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row;
     flex-flow: row;
     
 }
 
 .social-big__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
     flex: 1;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     font-size: 5.333rem;
     color: #fff;
@@ -904,12 +919,203 @@ nav {
 .social-big__link:nth-child(3){
     background-color: #cb2027;
 }
+/**--------FOOTER------------*/
+footer {
+    height: 348px;
+    background-color: #373737;
+    color: #fff;
+    position: relative;
+}
+.info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    padding-top: 70px;
+}
+.category,
+.our-account,
+.our-support,
+.newsletter,
+.about-us {
+    -webkit-box-flex: 5;
+    -ms-flex: 5;
+    flex: 5;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 0 22px;
+    
+}
+.info__link-container{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    -ms-flex-flow:column;
+    flex-flow:column;
+    
+}
+/*style for all linf of info block*/
+.info__link-container a{
+    color: #fff;
+    font-family: Roboto, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-top: 4px;
+}
+.info__link-container a:hover {
+    text-decoration: underline;
+}
+.info .newsletter {
+    -webkit-box-flex: 8;
+    -ms-flex: 8;
+    flex: 8;
+    
+}
+.payment a{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.info .about-us {
+    -webkit-box-flex: 8;
+    -ms-flex: 8;
+    flex: 8;
+}
+.about-us p {
+    margin: 3px 0;
+}
+.about-us a {
+    margin-left: 18px;
+}
+.payment {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.phone, .mail, .phone__link  {
+    font-family: Roboto, sans-serif;
+    font-size: 1.166rem;
+    font-weight: 400;
+    line-height: 23.4px;
+    margin: 5px 0;
+    color: #fff;
+}
+.mail__link {
+    color: #faef03;
+}
 
-
-
-
-
-
-
-
-
+/*---------SUBSCRIBE FORM---------------*/
+form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    outline: none;
+}
+input[type=text] {
+    height: 30px;
+    width: 167px;
+    background-color: #fff51f;
+    border: none;
+    outline: none;
+    color: #000;
+    font-weight: 700;
+    padding: 0 10px;
+    outline: none;
+    
+    
+}
+input[type=text]::-webkit-input-placeholder{
+    opacity: 0.45;
+    color: #333;
+    font-family: Roboto, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0 15px;
+}
+input[type=text]:-ms-input-placeholder{
+    opacity: 0.45;
+    color: #333;
+    font-family: Roboto, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0 15px;
+}
+input[type=text]::placeholder{
+    opacity: 0.45;
+    color: #333;
+    font-family: Roboto, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0 15px;
+    outline: none;
+}
+input[type=button]{
+    height: 30px;
+    width: 70px;
+    background-color: #000;
+    border: none;
+    outline: none;
+    
+}
+/*----------------COPYRIGHT----------------*/
+.copyright {
+    height: 47px;
+    background-color: #333333;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    
+}
+.copyright .wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row;
+    align-items: center;
+}
+.copyright__social-link {
+    color: #fff;
+    font-size: 1.25rem;
+    margin-left: 15px;
+}
