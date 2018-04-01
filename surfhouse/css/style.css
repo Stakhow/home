@@ -22,9 +22,14 @@ h2 {
     font-style: italic;
     font-size: 2rem;
     font-weight: 800;
-    margin: 0;
-    margin-bottom: 22px;
+    margin: 32px 0 22px;
     text-transform: capitalize;
+}
+h3 {
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
 }
     a {
     text-decoration: none;
@@ -453,9 +458,9 @@ nav {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-box-align: stretch;
-    -ms-flex-align: stretch;
-    align-items: stretch;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
 }
 
 /*-----------SIDE BAR-------------------*/
@@ -469,8 +474,7 @@ nav {
     -webkit-box-direction: normal;
     -ms-flex-flow: column;
     flex-flow: column;
-    margin: 46px 0 30px;
-    border: 1px solid red;
+    margin-bottom: 30px;
 
 }
 
@@ -500,6 +504,7 @@ nav {
 }
 
 .menu__item {
+    height: 409px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -507,6 +512,8 @@ nav {
     -webkit-box-direction: normal;
     -ms-flex-flow: column;
     flex-flow: column;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
     background-color: #26d2fc;
 
 }
@@ -518,18 +525,21 @@ nav {
     text-transform: uppercase;
     line-height: 1;
     width: 270px;
-    height: 43px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
 }
 
 .menu__item-link:hover {
     background-color: #333;
     color: #fff;
+    
 }
 
 .menu__item-link span {
@@ -571,10 +581,12 @@ nav {
     -webkit-box-direction: normal;
     -ms-flex-flow: column;
     flex-flow: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     padding: 0 30px;
     background-color: #fff;
 }
-
 .tags-widget__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -583,6 +595,9 @@ nav {
     -webkit-box-direction: normal;
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
+    height: 100%; 
+    -ms-flex-line-pack: stretch; 
+    align-content: stretch;
 
 }
 
@@ -590,7 +605,7 @@ nav {
     height: 30px;
     width: auto;
     background-color: #e9e9e9;
-    margin: 4px;
+    margin-right: 4px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -619,7 +634,7 @@ nav {
     font-size: 1.16rem;
     font-weight: 800;
     font-style: italic;
-    margin-top: 22px;
+    margin: 28px 0;
 
 }
 
@@ -634,28 +649,38 @@ nav {
     -webkit-box-direction: normal;
     -ms-flex-flow: column;
     flex-flow: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     padding: 0 30px;
     background-color: #fff;
 }
+.articles-experts__container{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 100%;
+}
 .articles-experts__link {
-    margin-bottom: 20px;
     color: #555555;
     font-family: "Roboto", sans-serif;
     font-size: 1.16rem;
     font-weight: 400;
 }
 
-.articles-experts__link:nth-child(9) {
-    margin-bottom: 0;
-}
 
 /*----------PRODUCTS--------------*/
 
 .products {
     width: 870px;
-    margin: 0;
-    padding: 0;
-    border: 1px solid red;
+/*    border: 1px solid red;*/
 }
 
 .products__heading {
@@ -668,9 +693,12 @@ nav {
     text-transform: uppercase;
     padding: 0 25px;
     background-color: #f8f8f8;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
-    margin-top: 46px;
 }
 
 .products__container {
@@ -782,3 +810,106 @@ nav {
 .item__desc p {
     margin-left: 20px;
 }
+/*------PRODUCTS__top-products-----------*/
+.top-products {
+    margin-top: 16px;
+}
+.sale-products {
+    margin-top: 20px;
+}
+/*-----------BRAND--------------*/
+.brand {
+    height: 160px;
+    background-color: #fff;
+    color: #eaeaea;
+    font-size: 2.166rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-weight: 700;
+}
+/*-----------INSTAGTAM FEED---------------*/
+#instagram {
+    height: 350px;
+    background-color: #eaeaea;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.instagram__heading {
+    text-align: center;
+    color: #333333;
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    font-size: 1.833rem;
+    font-weight: 800;
+}
+ /* Text style for ": #surfhou" */
+.instagram__heading span{
+    font-size: 1.5rem;
+}
+ /* Text style for instag-icon */
+.instagram__heading .icon-instagram{
+    font-size: 2.333rem;
+    margin: 8px;
+    position: relative;
+    top: 5px;
+    
+    
+}
+.instagram__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+/*--------SOCIAL BIG LINKS--------------*/
+.social-big {
+    height: 150px;
+    display: flex;
+    flex-flow: row;
+    
+}
+
+.social-big__link {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    font-size: 5.333rem;
+    color: #fff;
+    
+}
+.social-big__link:nth-child(1){
+    background-color: #3b5997;
+}
+.social-big__link:nth-child(2){
+    background-color: #3fccfd;
+}
+.social-big__link:nth-child(3){
+    background-color: #cb2027;
+}
+
+
+
+
+
+
+
+
+
